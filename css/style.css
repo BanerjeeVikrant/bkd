@@ -1,0 +1,247 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.top-nav{
+	display: inline-block;
+    background: -webkit-linear-gradient(#696767, #000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#696767, #000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#696767, #000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#696767, #000000); /* Standard syntax (must be last) */
+
+    width:100vw;
+}
+
+.logo{
+	width: 45px;
+	height: 45px;
+	margin-left: 20px;
+	margin-top:3px;
+	border-radius: 45px;
+}
+.logo-wrapper{
+	cursor: pointer;
+}
+.logo-wrapper, .searchbar-wrapper, .speech-wrapper, .options-nav, .notifications-wrapper, .crush-wrapper,.about-btn-wrapper{
+	display: inline;
+}
+
+.logo-name{
+	color: white;
+	font-size: 25px;
+	font-family: 'IM Fell English SC';
+	position: relative;
+	top:-13px;
+	left:5px;
+}
+
+.search-tool-wrapper{
+	background-color: #2B2A2A;
+	border-top-left-radius: 45px;
+	border-bottom-left-radius: 45px;
+	display: inline-block;
+	width:30px;
+	height:30px;
+	padding:4px;
+	padding-left: 10px;
+	position: relative;
+	top: -15px;
+	left: 14px;
+	/*border-top:1px solid white;
+	border-bottom:1px solid white;
+	border-left:1px solid white;*/
+	font-family: verdana;
+}
+
+.search-tool{
+	font-size: 15px
+}
+.glyphicon-search{
+    color:#e2e8eb;
+}
+
+.search{
+	width: 20vw;
+	background-color: #2B2A2A;
+	color:#e2e8eb;
+	border-top-right-radius: 45px;
+	border-bottom-right-radius: 45px;
+	outline: none;
+	border: 0;
+	height: 30px;
+	position: relative;
+	top: -16px;
+	left: 10px;
+	padding-left:5px;
+	/*border-top:1px solid white;
+	border-bottom:1px solid white;
+	border-right:1px solid white;*/
+}
+.settings-img{
+	display:inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 45px;
+	float: right;
+	cursor: pointer;
+	top: 5px;
+	left:120px;
+
+	background-repeat: no-repeat;
+
+	background-position: center center; 
+}
+.speech-wrapper{
+	position: relative;
+	float:right;
+	right: 42px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.notifications-wrapper{
+	position: relative;
+	float:right;
+	right: 120px;
+	top: 15px;
+	cursor: pointer;
+}
+.crush-wrapper{
+	position: relative;
+	float:right;
+	right: 200px;
+	top: 15px;
+	cursor: pointer;
+}
+.notifications{
+	display:inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 45px;
+	float: right;
+	cursor: pointer;
+	top: -10px;
+	left:35px;
+
+	background-repeat: no-repeat;
+
+	background-position: center center; 
+}
+.crush-notification{
+	display:inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 45px;
+	float: right;
+	cursor: pointer;
+    top: -10px;
+    left: 10px;
+
+	background-repeat: no-repeat;
+
+	background-position: center center; 
+}
+.speech{
+	display:inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 45px;
+	float: right;
+	cursor: pointer;
+    top: -10px;
+    left: 60px;
+
+	background-repeat: no-repeat;
+
+	background-position: center center; 
+}
+.options-nav{
+	position: absolute;
+	width: 150px;
+	background: white;
+	padding-top:5px;
+	padding-bottom:5px;
+	left:calc(100vw - 195px);
+	top: 60px;
+	box-shadow: 0px 1px 3px #607fd6;
+	border-radius: 5px;
+}
+.options{
+	font-size:15px;
+	font-family: verdana;
+	padding:2.5px;
+	padding-left:12px;
+}
+.options:hover{
+	background:#2B2A2A;
+	color: white;
+}
+.glyphicon-triangle-top{
+	color:white;
+}
+.tip-triangle{
+	position: absolute;
+	left: 132px;
+	top: -12px;
+}
+.signup-btn-wrapper{
+	display: inline-block;
+	position: absolute;
+	left: calc(90vw - 50px);
+	top: 10px;
+}
+a{
+	text-decoration: none !important;
+}
+.signup-btn{
+    width: 120px;
+    height: 40px;
+	border:2px solid #29FFBF;
+	border-radius: 10px;
+	font-family: verdana;
+	font-size: 17px;
+	background: linear-gradient(#696767, #000000);
+	color:#29FFBF;
+	margin-left: 20px;
+}
+.signup-btn:hover{
+	color: #000;
+	background: #29FFBF;
+}
+
+.about-btn{
+    width: 140px;
+    height: 40px;
+	border:2px solid #CC6600;
+	border-radius: 10px;
+	font-family: verdana;
+	font-size: 17px;
+	background: linear-gradient(#696767, #000000);
+	color: #CC6600;
+	float: right;
+	position: relative;
+	right: 185px;
+    top: 10px;
+
+}
+.about-btn:hover{
+	color: #000;
+	background: #CC6600;
+}
+
