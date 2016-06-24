@@ -1,7 +1,8 @@
 <?php 
 	require "connect.php"; 
 
-/*	if ($_SERVER['HTTP_CLIENT_IP']!="") {
+/*	
+	if ($_SERVER['HTTP_CLIENT_IP']!="") {
 	    $ip = $_SERVER['HTTP_CLIENT_IP'];
 	} 
 	else if ($_SERVER['HTTP_X_FORWARDED_FOR']!=""){
@@ -9,10 +10,12 @@
 	} 
 	else {
 	    $ip = $_SERVER['REMOTE_ADDR'];
-	}*/
+	}
+*/
 
 	//background color is defined in jquery.
-	$background = "#030F21";
+	$background = "#e6e6e6";
+	$backgroundDark = "#7b7b7b";
 	$profilePic = "http://www.deliophotostudio.com/miami_passport_photos/miami-passport-photos.jpg";
 
 	session_start();
@@ -64,13 +67,13 @@
 		    vertical-align: baseline;
 		}
 
+		body{
+			overflow-x: hidden;
+		}
+
 		.top-nav{
 			display: inline-block;
-		    background: -webkit-linear-gradient(#696767, #000000); /* For Safari 5.1 to 6.0 */
-		    background: -o-linear-gradient(#696767, #000000); /* For Opera 11.1 to 12.0 */
-		    background: -moz-linear-gradient(#696767, #000000); /* For Firefox 3.6 to 15 */
-		    background: linear-gradient(#696767, #000000); /* Standard syntax (must be last) */
-
+		    background: #1d2d4a;
 		    width:100vw;
 		}
 
@@ -78,14 +81,14 @@
 			width: 45px;
 			height: 45px;
 			margin-left: 20px;
-			margin-top:3px;
+			margin-top:5px;
 			border-radius: 45px;
 		}
 		.logo-wrapper{
 			cursor: pointer;
 		}
 		.logo-wrapper, .searchbar-wrapper, .speech-wrapper, .options-nav, .notifications-wrapper, .crush-wrapper,.about-btn-wrapper{
-			display: inline;
+			display: inline-block;
 		}
 
 		.logo-name{
@@ -93,12 +96,12 @@
 			font-size: 25px;
 			font-family: 'IM Fell English SC';
 			position: relative;
-			top:-13px;
+			top:-11px;
 			left:5px;
 		}
 
 		.search-tool-wrapper{
-			background-color: #2B2A2A;
+			background-color: #222;
 			border-top-left-radius: 45px;
 			border-bottom-left-radius: 45px;
 			display: inline-block;
@@ -107,7 +110,7 @@
 			padding:4px;
 			padding-left: 10px;
 			position: relative;
-			top: -16px;
+			top: -11px;
 			left: 14px;
 			/*border-top:1px solid white;
 			border-bottom:1px solid white;
@@ -124,7 +127,7 @@
 
 		.search{
 			width: 20vw;
-			background-color: #2B2A2A;
+			background-color: #222;
 			color:#e2e8eb;
 			border-top-right-radius: 45px;
 			border-bottom-right-radius: 45px;
@@ -132,7 +135,7 @@
 			border: 0;
 			height: 30px;
 			position: relative;
-			top: -16px;
+			top: -11px;
 			left: 10px;
 			padding-left:5px;
 			font-family: 'PT Serif Caption';
@@ -301,8 +304,6 @@
 			color: #000;
 			background: #CC6600;
 		}
-
-
 	</style>
 
 
@@ -342,6 +343,7 @@
 					<div class="options">Feedback</div>
 					<div class="options logout">Log Out</div>
 				</div>
+				
 				';
 		}else{
 		echo'

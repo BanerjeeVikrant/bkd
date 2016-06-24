@@ -1,0 +1,1 @@
+<textarea name="post" id="post" cols="100" rows="14" placeholder = "Write on Timeline..."></textarea>
