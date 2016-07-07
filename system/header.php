@@ -34,23 +34,24 @@
 	<link rel="shortcut icon" href="/bkd/img/bearpic.png">
 
 	<!--other resourses, external source(help)-->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=IM+Fell+English+SC" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Carter+One" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
+
+	<!--jquery 2.2.0-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
+	<!--angularjs 1.4.8-->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 	<!--bootstrap 3.3.6-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<!--jquery 2.2.0-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-	<!--angularjs 1.4.8-->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
 	<!-- style sheets-->
 	<link rel = "stylesheet" type = "text/css" href = "/bkd/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=IM+Fell+English+SC" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Carter+One" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
 
 	<!-- javascript files-->
 	<script src = "/bkd/js/main.js"></script>
@@ -87,7 +88,7 @@
 		.logo-wrapper{
 			cursor: pointer;
 		}
-		.logo-wrapper, .searchbar-wrapper, .speech-wrapper, .options-nav, .notifications-wrapper, .crush-wrapper,.about-btn-wrapper{
+		.logo-wrapper, .searchbar-wrapper, .speech-wrapper, .options-nav, .notifications-wrapper, .crush-wrapper,.about-btn-wrapper, .usersearchbar-wrapper{
 			display: inline-block;
 		}
 
@@ -143,7 +144,7 @@
 			border-bottom:1px solid white;
 			border-right:1px solid white;*/
 		}
-		.settings-img{
+		.home-img{
 			display:inline-block;
 			position: relative;
 			width: 40px;
@@ -336,13 +337,13 @@
 				<div class="speech-wrapper">
 					<div class="speech" style="background-image: url(/bkd/img/speech-start.png);"></div>
 				</div>
-				<div class="settings-img" style="background-image: url(/bkd/img/settings.png);"></div>
-				<div class="options-nav">
+				<div class="home-img" data-toggle="modal" data-target="#myModal" style="background-image: url(/bkd/img/home.png);"></div>
+				<!--<div class="options-nav">
 				<span class="glyphicon glyphicon-triangle-top tip-triangle"></span>
 					<div class="options">Settings</div>
 					<div class="options">Feedback</div>
 					<div class="options logout">Log Out</div>
-				</div>
+				</div>-->
 				
 				';
 		}else{
@@ -366,7 +367,7 @@
 		$( ".search" ).animate({ width: "40vw" }, 'slow');
 	});
 
-	var options_nav_open = false;
+	/*var options_nav_open = false;
 	$( ".options-nav" ).hide();
 
 	$( ".settings-img" ).click(function() {
@@ -379,6 +380,6 @@
 			$( ".options-nav" ).hide(100);
 			options_nav_open = false;
 		}
-	});
+	});*/
 
 </script>
